@@ -7,7 +7,7 @@ import Spinner from '../components/Spinner'
 import ListingItem from '../components/ListingItem'
 
 
-function Offers() {
+function Category() {
     const [listings, setListings] = useState(null)
     const [loading, setLoading ] = useState(true)
 
@@ -20,7 +20,7 @@ function Offers() {
               const listingsRef = collection(db, 'listings')
 
               //query 
-              const q = query(listingsRef, where('offer', '==', true), orderBy('timestamp', 'desc'), limit(10))
+              const q = query(listingsRef, where('type', '==', params.categoryName), orderBy('timestamp', 'desc'), limit(10))
 
               //exequte query
               const querySnap = await getDocs(q)
@@ -43,13 +43,13 @@ function Offers() {
         }
 
         fetchListings()
-    },[])
+    },[params.categoryName])
 
     return (
         <div className='category'>
             <header>
                 <p className="pageHeader">
-                    Angebote
+                    {params.categoryName === 'rent' ? 'Wohnungen zum mieten' : 'Wohnungen zum Kaufen'}
                 </p>
             </header>
 
@@ -66,10 +66,10 @@ function Offers() {
              </main>
              </>
             ) : (
-                <p>Aktuell gibt es leider keine Angebote</p>
+                <p>No listings fo {params.categoryName}</p>
             )}
         </div>
     )
 }
 
-export default Offers
+export default Category

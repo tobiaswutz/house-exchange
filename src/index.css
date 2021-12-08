@@ -121,7 +121,7 @@ button {
   width: 64px;
   height: 64px;
   border: 8px solid;
-  border-color: #00cc66 transparent #00cc66 transparent;
+  border-color: #fffb00 transparent #fffb00 transparent;
   border-radius: 50%;
   animation: spin 1.2s linear infinite;
 }
@@ -145,7 +145,7 @@ button {
   bottom: 0;
   right: 0;
   height: 85px;
-  background-color: #ffffff;
+  background-color: #000000;
   z-index: 1000;
   display: flex;
   justify-content: center;
@@ -293,7 +293,7 @@ button {
   color: #00cc66;
   font-weight: 600;
   text-align: center;
-  margin-bottom: 3rem;
+  margin-bottom: 10rem;
 }
 
 @media (min-width: 1217px) {
