@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap");
 * {
   box-sizing: border-box;
 }
@@ -8,8 +8,8 @@ html::-webkit-scrollbar {
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
-  background-color: #f2f4f8;
+  font-family: "Montserrat", sans-serif;
+  background-color: #ffffff;
   margin: 0;
   box-sizing: border-box;
 }
@@ -37,7 +37,7 @@ button {
   height: 3rem;
   width: 100%;
   outline: none;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   padding: 0 3rem;
   font-size: 1rem;
 }
@@ -59,7 +59,7 @@ button {
 
 .primaryButton {
   cursor: pointer;
-  background: #00cc66;
+  background: #000000;
   border-radius: 1rem;
   padding: 0.85rem 2rem;
   color: #ffffff;
@@ -186,12 +186,12 @@ button {
 
 .nameInput {
   margin-bottom: 2rem;
-  background: url('./assets/svg/badgeIcon.svg') #ffffff 2.5% center no-repeat;
+  background: url("./assets/svg/badgeIcon.svg") #ffffff 2.5% center no-repeat;
 }
 
 .emailInput {
   margin-bottom: 2rem;
-  background: url('./assets/svg/personIcon.svg') #ffffff 2.5% center no-repeat;
+  background: url("./assets/svg/personIcon.svg") #ffffff 2.5% center no-repeat;
 }
 
 .passwordInputDiv {
@@ -200,7 +200,7 @@ button {
 
 .passwordInput {
   margin-bottom: 2rem;
-  background: url('./assets/svg/lockIcon.svg') #ffffff 2.5% center no-repeat;
+  background: url("./assets/svg/lockIcon.svg") #ffffff 2.5% center no-repeat;
 }
 
 .showPassword {
@@ -213,7 +213,7 @@ button {
 
 .forgotPasswordLink {
   cursor: pointer;
-  color: #00cc66;
+  color: #000000;
   font-weight: 600;
   text-align: right;
 }
@@ -253,7 +253,7 @@ button {
   align-items: center;
   width: 3rem;
   height: 3rem;
-  background-color: #00cc66;
+  background-color: #000000;
   border-radius: 50%;
 }
 @media (min-width: 1024px) {
@@ -290,7 +290,7 @@ button {
 
 .registerLink {
   margin-top: 4rem;
-  color: #00cc66;
+  color: #000000;
   font-weight: 600;
   text-align: center;
   margin-bottom: 10rem;
@@ -451,7 +451,7 @@ button {
   margin-top: 0.5rem;
   font-weight: 600;
   font-size: 1.1rem;
-  color: #00cc66;
+  color: #000000;
   margin-bottom: 0;
   display: flex;
   align-items: center;
@@ -524,7 +524,7 @@ button {
 
 .listingType {
   padding: 0.25rem 0.5rem;
-  background-color: #00cc66;
+  background-color: #000000;
   color: #ffffff;
   border-radius: 2rem;
   display: inline;
@@ -621,11 +621,11 @@ button {
 
 .logOut {
   cursor: pointer;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 1rem;
   font-weight: 600;
   color: #ffffff;
-  background-color: #00cc66;
+  background-color: #000000;
   padding: 0.25rem 0.75rem;
   border-radius: 1rem;
 }
@@ -643,11 +643,12 @@ button {
 .changePersonalDetails {
   cursor: pointer;
   font-weight: 600;
-  color: #00cc66;
+  color: #000000;
 }
 
 .profileCard {
-  background-color: #ffffff;
+  background-color: #000000;
+  color: #ffffff;
   border-radius: 1rem;
   padding: 1rem;
   box-shadow: rgba(0, 0, 0, 0.2);
@@ -697,6 +698,7 @@ button {
   font-weight: 600;
   max-width: 500px;
   display: flex;
+  color: #000000;
   justify-content: space-between;
   align-items: center;
 }
@@ -738,7 +740,7 @@ button {
   align-items: center;
 }
 .formButtonActive {
-  background-color: #00cc66;
+  background-color: #000000;
   color: #ffffff;
 }
 
@@ -753,7 +755,7 @@ button {
 .formInputFile {
   border: none;
   outline: none;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 .formInputSmall,
 .formInputFile {
@@ -793,7 +795,7 @@ button {
   width: 100%;
 }
 .formInputFile::-webkit-file-upload-button {
-  background-color: #00cc66;
+  background-color: #000000;
   border: none;
   color: #ffffff;
   font-weight: 600;
