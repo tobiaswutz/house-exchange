@@ -8,12 +8,12 @@ function Explore() {
     return (
         <div className="explore">
             <header>
-                <p className="pageHeader">Explore</p>
+                <p className="pageHeader">Immobilienmarkt</p>
             </header>
 
             <main>
                 <Slider />
-                <p className="exploreCategoryHeading">Categorys</p>
+                <p className="exploreCategoryHeading">Kategorien</p>
                 <div className="exploreCategories">
                     <Link to='/category/rent'>
                         <img src={rentCategoryImage} alt="rent" className="exploreCategoryImg"/>

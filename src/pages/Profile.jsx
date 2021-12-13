@@ -108,7 +108,7 @@ function Profile() {
   return (
     <div className='profile'>
       <header className='profileHeader'>
-        <p className='pageHeader'>My Profile</p>
+        <p className='pageHeader'>Mein Profil</p>
         <button type='button' className='logOut' onClick={onLogout}>
           Logout
         </button>
@@ -116,7 +116,7 @@ function Profile() {
 
       <main>
         <div className='profileDetailsHeader'>
-          <p className='profileDetailsText'>Personal Details</p>
+          <p className='profileDetailsText'>persönliches</p>
           <p
             className='changePersonalDetails'
             onClick={() => {
@@ -151,13 +151,13 @@ function Profile() {
 
         <Link to='/create-listing' className='createListing'>
           <img src={homeIcon} alt='home' />
-          <p>Sell or rent your home</p>
+          <p>Angeige erstellen</p>
           <img src={arrowRight} alt='arrow right' />
         </Link>
 
         {!loading && listings?.length > 0 && (
           <>
-            <p className='listingText'>Your Listings</p>
+            <p className='listingText'>Meine Anzeigen</p>
             <ul className='listingsList'>
               {listings.map((listing) => (
                 <ListingItem
