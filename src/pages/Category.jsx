@@ -102,8 +102,8 @@ function Category() {
       <header>
         <p className='pageHeader'>
           {params.categoryName === 'rent'
-            ? 'Places for rent'
-            : 'Places for sale'}
+            ? 'Objekte zum Mieten'
+            : 'Objekte zum Kaufen'}
         </p>
       </header>
 
@@ -127,12 +127,12 @@ function Category() {
           <br />
           {lastFetchedListing && (
             <p className='loadMore' onClick={onFetchMoreListings}>
-              Load More
+              Mehr anzeigen
             </p>
           )}
         </>
       ) : (
-        <p>No listings for {params.categoryName}</p>
+        <p>Kein passendes Listing gefunden</p>
       )}
     </div>
   )

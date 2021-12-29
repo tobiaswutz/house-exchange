@@ -143,8 +143,8 @@ button {
   left: 0;
   bottom: 0;
   right: 0;
-  height: 85px;
-  background-color: #000000;
+  height: 60px;
+  background-color: white;
   z-index: 1000;
   display: flex;
   justify-content: center;

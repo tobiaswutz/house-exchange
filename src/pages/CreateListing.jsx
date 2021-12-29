@@ -77,7 +77,7 @@ function CreateListing() {
 
     if (discountedPrice >= regularPrice) {
       setLoading(false)
-      toast.error('Discounted price needs to be less than regular price')
+      toast.error('muss kleiner als Normalpreis sein!')
       return
     }
 
@@ -216,12 +216,12 @@ function CreateListing() {
   return (
     <div className='profile'>
       <header>
-        <p className='pageHeader'>Create a Listing</p>
+        <p className='pageHeader'>Erstelle ein Listing</p>
       </header>
 
       <main>
         <form onSubmit={onSubmit}>
-          <label className='formLabel'>Sell / Rent</label>
+          <label className='formLabel'>Verkaufen / Vermieten</label>
           <div className='formButtons'>
             <button
               type='button'
@@ -230,7 +230,7 @@ function CreateListing() {
               value='sale'
               onClick={onMutate}
             >
-              Sell
+              Verkaufen
             </button>
             <button
               type='button'
@@ -239,7 +239,7 @@ function CreateListing() {
               value='rent'
               onClick={onMutate}
             >
-              Rent
+              Vermieten
             </button>
           </div>
 
@@ -257,7 +257,7 @@ function CreateListing() {
 
           <div className='formRooms flex'>
             <div>
-              <label className='formLabel'>Bedrooms</label>
+              <label className='formLabel'>Schlafzimmer</label>
               <input
                 className='formInputSmall'
                 type='number'
@@ -270,7 +270,7 @@ function CreateListing() {
               />
             </div>
             <div>
-              <label className='formLabel'>Bathrooms</label>
+              <label className='formLabel'>Badezimmer</label>
               <input
                 className='formInputSmall'
                 type='number'
@@ -284,7 +284,7 @@ function CreateListing() {
             </div>
           </div>
 
-          <label className='formLabel'>Parking spot</label>
+          <label className='formLabel'>Parkplatz</label>
           <div className='formButtons'>
             <button
               className={parking ? 'formButtonActive' : 'formButton'}
@@ -295,7 +295,7 @@ function CreateListing() {
               min='1'
               max='50'
             >
-              Yes
+              Ja
             </button>
             <button
               className={
@@ -306,11 +306,11 @@ function CreateListing() {
               value={false}
               onClick={onMutate}
             >
-              No
+              Nein
             </button>
           </div>
 
-          <label className='formLabel'>Furnished</label>
+          <label className='formLabel'>Möbeliert</label>
           <div className='formButtons'>
             <button
               className={furnished ? 'formButtonActive' : 'formButton'}
@@ -319,7 +319,7 @@ function CreateListing() {
               value={true}
               onClick={onMutate}
             >
-              Yes
+              Ja
             </button>
             <button
               className={
@@ -332,11 +332,11 @@ function CreateListing() {
               value={false}
               onClick={onMutate}
             >
-              No
+              Nein
             </button>
           </div>
 
-          <label className='formLabel'>Address</label>
+          <label className='formLabel'>Adresse</label>
           <textarea
             className='formInputAddress'
             type='text'
@@ -349,7 +349,7 @@ function CreateListing() {
           {!geolocationEnabled && (
             <div className='formLatLng flex'>
               <div>
-                <label className='formLabel'>Latitude</label>
+                <label className='formLabel'>Längengrad</label>
                 <input
                   className='formInputSmall'
                   type='number'
@@ -360,7 +360,7 @@ function CreateListing() {
                 />
               </div>
               <div>
-                <label className='formLabel'>Longitude</label>
+                <label className='formLabel'>Breitengrad</label>
                 <input
                   className='formInputSmall'
                   type='number'
@@ -373,7 +373,7 @@ function CreateListing() {
             </div>
           )}
 
-          <label className='formLabel'>Offer</label>
+          <label className='formLabel'>Reduziert?</label>
           <div className='formButtons'>
             <button
               className={offer ? 'formButtonActive' : 'formButton'}
@@ -382,7 +382,7 @@ function CreateListing() {
               value={true}
               onClick={onMutate}
             >
-              Yes
+              Ja
             </button>
             <button
               className={
@@ -393,11 +393,11 @@ function CreateListing() {
               value={false}
               onClick={onMutate}
             >
-              No
+              Nein
             </button>
           </div>
 
-          <label className='formLabel'>Regular Price</label>
+          <label className='formLabel'>Normalpreis</label>
           <div className='formPriceDiv'>
             <input
               className='formInputSmall'
@@ -409,12 +409,12 @@ function CreateListing() {
               max='750000000'
               required
             />
-            {type === 'rent' && <p className='formPriceText'>$ / Month</p>}
+            {type === 'rent' && <p className='formPriceText'>€ / Monat</p>}
           </div>
 
           {offer && (
             <>
-              <label className='formLabel'>Discounted Price</label>
+              <label className='formLabel'>Reduzierter Preis</label>
               <input
                 className='formInputSmall'
                 type='number'
@@ -428,9 +428,9 @@ function CreateListing() {
             </>
           )}
 
-          <label className='formLabel'>Images</label>
+          <label className='formLabel'>Bilder</label>
           <p className='imagesInfo'>
-            The first image will be the cover (max 6).
+            Das erste Bild wird als Cover verwendet (max 6).
           </p>
           <input
             className='formInputFile'
@@ -443,7 +443,7 @@ function CreateListing() {
             required
           />
           <button type='submit' className='primaryButton createListingButton'>
-            Create Listing
+            Listing erstellen
           </button>
         </form>
       </main>

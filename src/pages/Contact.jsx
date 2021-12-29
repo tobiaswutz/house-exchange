@@ -32,19 +32,19 @@ function Contact() {
   return (
     <div className='pageContainer'>
       <header>
-        <p className='pageHeader'>Contact Landlord</p>
+        <p className='pageHeader'>Verkäufer kontaktieren</p>
       </header>
 
       {landlord !== null && (
         <main>
           <div className='contactLandlord'>
-            <p className='landlordName'>Contact {landlord?.name}</p>
+            <p className='landlordName'>Schreibe {landlord?.name} eine Nachricht</p>
           </div>
 
           <form className='messageForm'>
             <div className='messageDiv'>
               <label htmlFor='message' className='messageLabel'>
-                Message
+                Nachricht
               </label>
               <textarea
                 name='message'

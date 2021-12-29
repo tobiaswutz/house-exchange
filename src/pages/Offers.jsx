@@ -97,7 +97,7 @@ function Offers() {
   return (
     <div className='category'>
       <header>
-        <p className='pageHeader'>Offers</p>
+        <p className='pageHeader'>Angebote</p>
       </header>
 
       {loading ? (
@@ -120,12 +120,12 @@ function Offers() {
           <br />
           {lastFetchedListing && (
             <p className='loadMore' onClick={onFetchMoreListings}>
-              Load More
+              Mehr anzeigen
             </p>
           )}
         </>
       ) : (
-        <p>There are no current offers</p>
+        <p>urzeit gibt es leider keine Angebote</p>
       )}
     </div>
   )

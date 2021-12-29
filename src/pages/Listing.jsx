@@ -50,77 +50,77 @@ function Listing() {
             <div
               style={{
                 background: `url(${listing.imgUrls[index]}) center no-repeat`,
-                backgroundSize: 'cover',
+                backgroundSize: "cover",
               }}
-              className='swiperSlideDiv'
+              className="swiperSlideDiv"
             ></div>
           </SwiperSlide>
         ))}
       </Swiper>
 
       <div
-        className='shareIconDiv'
+        className="shareIconDiv"
         onClick={() => {
-          navigator.clipboard.writeText(window.location.href)
-          setShareLinkCopied(true)
+          navigator.clipboard.writeText(window.location.href);
+          setShareLinkCopied(true);
           setTimeout(() => {
-            setShareLinkCopied(false)
-          }, 2000)
+            setShareLinkCopied(false);
+          }, 2000);
         }}
       >
-        <img src={shareIcon} alt='' />
+        <img src={shareIcon} alt="teilen" />
       </div>
 
-      {shareLinkCopied && <p className='linkCopied'>Link Copied!</p>}
+      {shareLinkCopied && <p className="linkCopied">Kopiert!</p>}
 
-      <div className='listingDetails'>
-        <p className='listingName'>
-          {listing.name} - $
+      <div className="listingDetails">
+        <p className="listingName">
+          {listing.name} - €
           {listing.offer
             ? listing.discountedPrice
                 .toString()
-                .replace(/\B(?=(\d{3})+(?!\d))/g, ',')
+                .replace(/\B(?=(\d{3})+(?!\d))/g, ",")
             : listing.regularPrice
                 .toString()
-                .replace(/\B(?=(\d{3})+(?!\d))/g, ',')}
+                .replace(/\B(?=(\d{3})+(?!\d))/g, ",")}
         </p>
-        <p className='listingLocation'>{listing.location}</p>
-        <p className='listingType'>
-          For {listing.type === 'rent' ? 'Rent' : 'Sale'}
+        <p className="listingLocation">{listing.location}</p>
+        <p className="listingType">
+          {listing.type === "rent" ? "Miete" : "Verkauf"}
         </p>
         {listing.offer && (
-          <p className='discountPrice'>
-            ${listing.regularPrice - listing.discountedPrice} discount
+          <p className="discountPrice">
+           Um €{listing.regularPrice - listing.discountedPrice} reduziert
           </p>
         )}
 
-        <ul className='listingDetailsList'>
+        <ul className="listingDetailsList">
           <li>
             {listing.bedrooms > 1
-              ? `${listing.bedrooms} Bedrooms`
-              : '1 Bedroom'}
+              ? `${listing.bedrooms} Schlafzimmer`
+              : "1 Schlafzimmer"}
           </li>
           <li>
             {listing.bathrooms > 1
-              ? `${listing.bathrooms} Bathrooms`
-              : '1 Bathroom'}
+              ? `${listing.bathrooms} Badezimmer`
+              : "1 Badezimmer"}
           </li>
-          <li>{listing.parking && 'Parking Spot'}</li>
-          <li>{listing.furnished && 'Furnished'}</li>
+          <li>{listing.parking && "Parkplatz"}</li>
+          <li>{listing.furnished && "Möbeliert"}</li>
         </ul>
 
-        <p className='listingLocationTitle'>Location</p>
+        <p className="listingLocationTitle">Standort</p>
 
-        <div className='leafletContainer'>
+        <div className="leafletContainer">
           <MapContainer
-            style={{ height: '100%', width: '100%' }}
+            style={{ height: "100%", width: "100%" }}
             center={[listing.geolocation.lat, listing.geolocation.lng]}
             zoom={13}
             scrollWheelZoom={false}
           >
             <TileLayer
               attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
-              url='https://{s}.tile.openstreetmap.de/tiles/osmde/{z}/{x}/{y}.png'
+              url="https://{s}.tile.openstreetmap.de/tiles/osmde/{z}/{x}/{y}.png"
             />
 
             <Marker
@@ -132,11 +132,16 @@ function Listing() {
         </div>
 
         {auth.currentUser?.uid !== listing.userRef && (
-          <Link to={`/contact/${listing.userRef}?listingName=${listing.name}`} className='primaryButton'>Eigentümer kontaktieren</Link>
+          <Link
+            to={`/contact/${listing.userRef}?listingName=${listing.name}`}
+            className="primaryButton"
+          >
+            Eigentümer kontaktieren
+          </Link>
         )}
       </div>
     </main>
-  )
+  );
 }
 
 export default Listing
