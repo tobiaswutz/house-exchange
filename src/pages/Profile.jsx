@@ -116,7 +116,7 @@ function Profile() {
 
       <main>
         <div className='profileDetailsHeader'>
-          <p className='profileDetailsText'>persönliches</p>
+          <p className='profileDetailsText'>Persönliches</p>
           <p
             className='changePersonalDetails'
             onClick={() => {

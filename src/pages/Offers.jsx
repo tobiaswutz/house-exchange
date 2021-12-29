@@ -125,7 +125,7 @@ function Offers() {
           )}
         </>
       ) : (
-        <p>urzeit gibt es leider keine Angebote</p>
+        <p>Zurzeit gibt es leider keine Angebote</p>
       )}
     </div>
   )
