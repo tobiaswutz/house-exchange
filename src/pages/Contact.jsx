@@ -20,7 +20,7 @@ function Contact() {
       if (docSnap.exists()) {
         setLandlord(docSnap.data())
       } else {
-        toast.error('Could not get landlord data')
+        toast.error('Keine Verkäuferdaten vorhanden')
       }
     }
 
@@ -31,14 +31,11 @@ function Contact() {
 
   return (
     <div className='pageContainer'>
-      <header>
-        <p className='pageHeader'>Verkäufer kontaktieren</p>
-      </header>
 
       {landlord !== null && (
         <main>
           <div className='contactLandlord'>
-            <p className='landlordName'>Schreibe {landlord?.name} eine Nachricht</p>
+            <p className='landlordName'>Sende {landlord?.name} eine Nachricht</p>
           </div>
 
           <form className='messageForm'>
