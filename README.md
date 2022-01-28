@@ -1,5 +1,5 @@
 <!-- ABOUT THE PROJECT -->
-#
+
 ## House marketplace with React and Firebase
 
 
