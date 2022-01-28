@@ -5,8 +5,8 @@
 
 ### Built With
 
-* [React.js](https://reactjs.org/)
-* [Firebase](https://firebase.google.com/)
+* React.js
+* Firebase
 
 
 
