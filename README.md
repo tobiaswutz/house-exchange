@@ -1,10 +1,8 @@
 <!-- ABOUT THE PROJECT -->
 ## House marketplace with React and Firebase
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
 
 ### Built With
-
 
 * [React.js](https://reactjs.org/)
 * [Firebase](https://firebase.google.com/)
@@ -14,18 +12,13 @@
 
 
 
-<!-- LICENSE -->
-## License
-
-Distributed under the MIT License. See `LICENSE.txt` for more information.
-
-<p align="right">(<a href="#top">back to top</a>)</p>
 
 
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
-* [](Authentication with Firebase)
+* Authentication with Firebase
+* React custom Hooks
 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
