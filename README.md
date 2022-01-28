@@ -18,7 +18,7 @@
 * React custom Hooks
 
 
-[![Deployed Project](https://housemarkets.netlify.app/)
+[Deployed Project](https://housemarkets.netlify.app/)
 
 
 
