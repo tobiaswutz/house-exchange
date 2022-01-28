@@ -3,7 +3,7 @@
 ## House marketplace with React and Firebase
 
 
-[Deployed Project](https://housemarkets.netlify.app/)
+-> [Deployed Project](https://housemarkets.netlify.app/)
 
 ### Built With
 
@@ -18,9 +18,6 @@
 
 * Authentication with Firebase
 * React custom Hooks
-
-
-[Deployed Project](https://housemarkets.netlify.app/)
 
 
 
