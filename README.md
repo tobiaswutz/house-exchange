@@ -1,4 +1,5 @@
 <!-- ABOUT THE PROJECT -->
+#
 ## House marketplace with React and Firebase
 
 
@@ -6,10 +7,6 @@
 
 * [React.js](https://reactjs.org/)
 * [Firebase](https://firebase.google.com/)
-
-<p align="right">(<a href="#top">back to top</a>)</p>
-
-
 
 
 
@@ -19,9 +16,6 @@
 
 * Authentication with Firebase
 * React custom Hooks
-
-
-<p align="right">(<a href="#top">back to top</a>)</p>
 
 
 
