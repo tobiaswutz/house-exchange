@@ -15,7 +15,6 @@
 
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
-
 * Authentication with Firebase
 * React custom Hooks
 
